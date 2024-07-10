@@ -51,5 +51,11 @@ body {
   flex: 1;
   padding: 0.25rem;
 }
+.container #employees thead {
+  background-color: lightgray;
+}
+.container #employees #employeeList {
+  background-color: rgb(238, 238, 238);
+}
 
 /*# sourceMappingURL=styles.css.map */

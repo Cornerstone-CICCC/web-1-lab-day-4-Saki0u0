@@ -14,15 +14,15 @@
         <legend>Personal Information</legend>
         <label>
           <span>First Name</span>
-          <input type="text" name="firstname" id="firstname" autocomplete="off">
+          <input type="text" name="firstname" id="firstname" autocomplete="off" required>
         </label>
         <label>
           <span>Last Name</span>
-          <input type="text" name="lastname" id="lastname" autocomplete="off">
+          <input type="text" name="lastname" id="lastname" autocomplete="off" required>
         </label>
         <label>
           <span>Email</span>
-          <input type="email" name="email" id="email" autocomplete="off">
+          <input type="email" name="email" id="email" autocomplete="off" required pattern="[a-zA-Z0-9_.]+@canada.ca" title="Only @canada.ca employees can register">
         </label>
         <label>
           <span>Hire Date</span>
@@ -33,18 +33,18 @@
         <legend>Profile Photo</legend>
         <label>
           <span>Upload photo</span>
-          <input type="file" name="photo" accept=".jpg, .png">
+          <input type="file" name="photo" accept="image/*,.jpg,.png">
         </label>
       </fieldset>
       <fieldset class="form__btns">
         <legend>Confirm Submission</legend>
         <button type="reset">Reset</button>
-        <button type="submit">Add Employee</button>
+        <button type="submit" id="submit">Add Employee</button>
       </fieldset>
     </form>
 
     <div id="employees">
-      <table cellspacing="0" cellpadding="0">
+      <table cellspacing="0" cellpadding="15">
         <thead>
           <th>Photo</th>
           <th>First Name</th>
